@@ -1,3 +1,9 @@
+---
+title: Plus Minus
+author: Melanie Sumner
+tags: algorithm
+---
+
 # Plus Minus
 
 ## Task

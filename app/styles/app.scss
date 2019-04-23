@@ -1,3 +1,6 @@
+*, *:after {
+  box-sizing: border-box;
+}
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -70,31 +73,35 @@ aside {
   background-color: dimgray;
   color: white;
   .aside-title{
-    width: 100%;
     clear: both;
+    font-size: 1.2em;
     font-weight:bold;
     letter-spacing: 1px;
+    padding: 2.2em 0 0.25em 1em;
     text-transform: uppercase;
-    padding: 10px;
+    width: 100%;
   }
   ul {
     list-style: none;
-    width: 100%;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    width: 100%;
     li {
       padding: 0;
       margin: 0;
+      &:last-of-type {
+        border-bottom: 1px solid gray;
+      }
       a {
+        border-top: 1px solid gray;
         color: white;
-        padding: 0.5em 0.25em;
-        border-top: 1px solid white;
         display:block;
+        padding: 0.75em 0 0.75em 1em;
         text-decoration: none;
         &:hover {
-          transition: ease-in-out all 0.5s;
-          color: #2d2d2d;
           background-color: white;
+          color: #2d2d2d;
+          transition: ease-in-out all 0.5s;
         }
       }
     }
@@ -107,15 +114,15 @@ main {
   }
 }
 .footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 15%;
   background-color: #222222;
-  color: white;
   border-top: 1px solid gray;
+  bottom: 0;
+  color: white;
+  left: 0;
+  position: absolute;
+  width: 15%;
   p {
-    padding: 0 0.25em;
+    padding: 0 0 0 1em;
   }
   a {
     color: white;

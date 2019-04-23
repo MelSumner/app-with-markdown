@@ -1,6 +1,13 @@
+---
+title: Diagonal Difference
+author: Melanie Sumner
+tags: algorithm
+---
+
 # Diagonal Difference
 
 ## Task
+
 Given a square matrix, calculate the absolute difference between the sums of its diagonals. 
 
 ## Code
