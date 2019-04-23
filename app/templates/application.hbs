@@ -1,20 +1,44 @@
-<header>
-  <p>App with markdown</p>
-</header>
-<aside>
+<header class="header">
+  {{#link-to "index" class="logo"}}
+    the explainer
+  {{/link-to}}
+  
+  {{!-- <nav class="site-nav">
     <ul>
-      {{#each model as |item|}}
-        <li>
-          {{#link-to "detail" item}}
-            {{item.id}}
-          {{/link-to}}
-        </li>
-      {{/each}}
+      <li></li>
+      <li></li>
+      <li></li>
     </ul>
+  </nav> --}}
+  {{!-- <div class="account-actions">
+    <div class="account-dropdown">
+      ⚙
+      <ul>
+        <li>Your Account</li>
+      </ul>
+    </div>
+    <a href="#0" class="sign-out-link">Sign Out</a>
+  </div> --}}
+</header>
+
+<aside>
+  <div class="aside-title">Algorithms</div>
+  <ul>
+    {{#each model as |item|}}
+      <li>
+        {{#link-to "detail" item}}
+          {{item.id}}
+        {{/link-to}}
+      </li>
+    {{/each}}
+  </ul>
+  <div class="footer">
+    <p>
+      <small>Built with ❤️ by <a href="https://github.com/melsumner">Mel Sumner</a></small>
+    </p>
+  </div>
 </aside>
 <main>
   {{outlet}}
 </main>
-<footer>
-  <p>Built with ❤️ by Mel Sumner</p>
-</footer>
+
