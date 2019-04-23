@@ -21,6 +21,7 @@
     "@ember/jquery": "^0.5.2",
     "@ember/optional-features": "^0.6.3",
     "broccoli-asset-rev": "^2.7.0",
+    "broccoli-static-site-json": "^3.3.0",
     "ember-ajax": "^5.0.0",
     "ember-cli": "~3.9.0",
     "ember-cli-app-version": "^3.2.0",
@@ -47,5 +48,10 @@
   },
   "engines": {
     "node": "6.* || 8.* || >= 10.*"
+  },
+  "ember-addon": {
+    "paths": [
+      "lib/content-builder"
+    ]
   }
 }

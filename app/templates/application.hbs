@@ -1,5 +1,20 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+<header>
+  <p>App with markdown</p>
+</header>
+<aside>
+    <ul>
+      {{#each model as |item|}}
+        <li>
+          {{#link-to "detail" item}}
+            {{item.id}}
+          {{/link-to}}
+        </li>
+      {{/each}}
+    </ul>
+</aside>
+<main>
+  {{outlet}}
+</main>
+<footer>
+  <p>Built with ❤️ by Mel Sumner</p>
+</footer>
