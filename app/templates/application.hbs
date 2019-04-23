@@ -22,17 +22,19 @@
 </header>
 
 <aside>
-  <div class="aside-title">Algorithms</div>
-  <ul>
-    {{#each model as |item|}}
-      <li>
-        {{#link-to "detail" item}}
-          {{item.title}}
-        {{/link-to}}
-      </li>
-    {{/each}}
-  </ul>
-  <div class="footer">
+  <div class="aside-content">
+    <div class="aside-title">Algorithms</div>
+    <ul>
+      {{#each model as |item|}}
+        <li>
+          {{#link-to "detail" item}}
+            {{item.title}}
+          {{/link-to}}
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+  <div class="aside-footer">
     <p>
       <small>Built with ❤️ by <a href="https://github.com/melsumner">Mel Sumner</a></small>
     </p>
